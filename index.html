@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  <!-- <link href="assets/images/favicon.svg" rel="icon"> -->
+  <!-- <link href="assets/images/favicon.svg" rel="apple-touch-icon"> -->
+  <!-- google font -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/images/favicon.png" rel="icon">
+  <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://use.typekit.net/pri7zai.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>TATA</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <header class="shadow-sm header-shadow">
+      <div class="header-box">
+        <nav class="row  justify-content-between header-nav no-gutters">
+          <div class="col-4 text-start brandcontainer px-3"><img src="./assets/images/tatasteel-logo.png" alt=""
+              class="brandlogo1"></div>
+          <div class="col-8 text-right"><img src="./assets/images/tata-logo.png" alt="" class="brandlogo2"></div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="form-box">
+          <h1 class="title">Fill in the form below!</h1>
+
+            <!-- previous end point : https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8 -->
+
+            <form action="/" method="POST" id="billfrm" name="billfrm" class="needs-validation bill-form" novalidate>
+
+            <input type=hidden name="oid" value="00D0o000001Cbqs">
+            <!--<input type=hidden name="retURL" value="https://onlinereviews.org.uk/tatapraveshuat/billtrax/">-->
+            <input type=hidden name="retURL" value="https://tatapravesh.com/projects/">
+
+            <div class="form-row">
+
+              <div class="col-12 col-md-6 mb-2">
+                <input type="text" class="form-control bg-input" name="last_name" id="last_name" required
+                  placeholder="Project Name" onpaste="validatePaste(this, event)" minlength="3" maxlength="80">
+                <div class="invalid-feedback">
+                  Please enter a project name
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-2">
+                <input type="text" class="form-control bg-input" name="street" id="street" required
+                  placeholder="Project Location" onpaste="validatePaste(this, event)" minlength="3" maxlength="80">
+                <div class="invalid-feedback">
+                  Please enter a project location
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-2">
+                <input type="tel" minlength="6" maxlength="6" placeholder="Site Pincode" class="form-control bg-input onlyNumbers pinVal" name="00N0o00000GjgNp" id="00N0o00000GjgNp" required onpaste="validatePaste(this, event)">
+                <div class="invalid-feedback sitepincode">
+                  Please enter a valid pincode
+                </div>
+              </div>
+
+              <div class="col-6 col-md-3 mb-2">
+                <select class="custom-select select-input bg-input" name="state" id="state" required>
+                  <option selected disabled value="">Site State</option>
+                  <option value="BIHAR" class="state_bihar">BIHAR</option>
+                  <option value="GOA" class="state_goa">GOA</option>
+                  <option value="GUJARAT" class="state_gujarat">GUJARAT</option>
+                  <option value="HARYANA" class="state_haryana">HARYANA</option>
+                  <option value="JAMMU &amp; KASHMIR" class="state_jammu_and_kashmir">JAMMU &amp; KASHMIR</option>
+                  <option value="JHARKHAND" class="state_jharkhand">JHARKHAND</option>
+                  <option value="KARNATAKA" class="state_karnataka">KARNATAKA</option>
+                  <option value="KERALA" class="state_kerala">KERALA</option>
+                  <option value="MADHYA PRADESH" class="state_madhya_pradesh">MADHYA PRADESH</option>
+                  <option value="MAHARASHTRA" class="state_maharashtra">MAHARASHTRA</option>
+                  <option value="ODISHA" class="state_odisha">ODISHA</option>
+                  <option value="PUNJAB" class="state_punjab">PUNJAB</option>
+                  <option value="RAJASTHAN" class="state_rajasthan">RAJASTHAN</option>
+                  <option value="TELANGANA" class="state_telangana">TELANGANA</option>
+                  <option value="UTTARAKHAND" class="state_uttarakhand">UTTARAKHAND</option>
+                  <option value="WEST BENGAL" class="state_west_bengal">WEST BENGAL</option>
+                  <option value="ANDHRA PRADESH" class="state_andhra_pradesh">ANDHRA PRADESH</option>
+                  <option value="HIMACHAL PRADESH" class="state_himachal_pradesh">HIMACHAL PRADESH</option>
+                  <option value="TAMIL NADU" class="state_tamil_nadu">TAMIL NADU</option>
+                  <option value="UTTAR PRADESH" class="state_uttar_pradesh">UTTAR PRADESH</option>
+                  <option value="DAMAN &amp; DIU" class="state_daman_n_diu">DAMAN &amp; DIU</option>
+                  <option value="ARUNACHAL PRADESH" class="state_arunachal_pradesh">ARUNACHAL PRADESH</option>
+                  <option value="DELHI" class="state_delhi">DELHI</option>
+                  <option value="CHATTISGARH" class="state_chhattisgarh">CHATTISGARH</option>
+                  <option value="CHANDIGARH" class="state_chandigarh">CHANDIGARH</option>
+                  <option value="ASSAM" class="state_assam">ASSAM</option>
+                  <option value="PONDICHERRY" class="state_puducherry">PONDICHERRY</option>
+                  <option value="MANIPUR" class="state_manipur">MANIPUR</option>
+                  <option value="MEGHALAYA" class="state_meghalaya">MEGHALAYA</option>
+                  <option value="DADRA &amp; NAGAR HAVELI" class="state_dadra_n_nagar_haveli">DADRA &amp; NAGAR HAVELI</option>
+                  <option value="NAGALAND" class="state_nagaland">NAGALAND</option>
+                  <option value="TRIPURA" class="state_tripura">TRIPURA</option>
+                  
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state
+                </div>
+              </div>
+
+              <div class="col-6 col-md-3 mb-2">
+                <select class="custom-select select-input bg-input" name="city" id="cityName" required>
+                  <option selected disabled value="">Site City</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid city
+                </div>
+              </div>
+
+
+              <div class="col-12 col-md-6 mb-2">
+                <input type="text" class="form-control bg-input" name="company" id="company" required
+                  placeholder="Company Name" onpaste="validatePaste(this, event)" minlength="3" maxlength="40">
+                <div class="invalid-feedback">
+                  Please enter a company name
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3 mb-2">
+                <input type="tel" minlength="6" maxlength="6" placeholder="Company Pincode" class="form-control bg-input pincode-input onlyNumbers" name="00N5i000003HACs" id="00N0T000008clYX" required onpaste="validatePaste(this, event)">
+                <div class="invalid-feedback companyPincode">
+                  Please enter a valid pincode
+                </div>
+              </div>
+              
+              <div class="col-12 col-md-3 mb-2">
+                <input type="text" class="form-control bg-input" name="00N5i000003HACv" id="companyAddress" required placeholder="Customer Address" minlength="5" maxlength="250">
+                <div class="invalid-feedback companyaddress_empty">
+                  Please enter a address
+                </div>
+                <div class="error_msg" id="address_min">Please enter minimum 5 Characters</div>
+              </div>
+
+
+              
+              <div class="col-12 col-md-6 mb-2">
+                <input type="text" class="form-control bg-input" name="00N5i000003HACu" id="00N0T000008clYc" required
+                  placeholder="Contact Person Name" onpaste="validatePaste(this, event)" maxlength="50">
+                <div class="invalid-feedback">
+                  Please enter a contact person name
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-2"> 
+                <input type="tel" minlength="10" maxlength="10" placeholder="Contact Person Mobile" class="form-control bg-input onlyNumbers" name="00N0o00000GjgNd" id="00N0o00000GjgNd" onpaste="validatePaste(this, event)" required> 
+                <div class="invalid-feedback mobvalid">
+                  Please enter a valid mobile number
+                </div>
+              </div>
+
+
+              <div class="col-12 col-md-6 mb-2">
+                <input type="email" class="form-control bg-input" name="00N5i000003HACt" id="00N0T000008clYm" required
+                  placeholder="Contact Person Email" onpaste="validatePaste(this, event)" maxlength="50">
+                <div class="invalid-feedback">
+                  Please enter a contact person email
+                </div>
+              </div>
+              
+              
+              <div class="col-12 col-md-6 mb-2">
+
+                <select class="custom-select select-input bg-input" id="00N0T000008clYw" name="00N5i000003HAD1" required>
+                    <option selected disabled value="">Property Type</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Large Infra">Large Infra</option>
+                    <option value="Hospital">Hospital</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Other">Other</option>
+                    <option value="Educational">Educational</option>
+                    <option value="Govt">Govt</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a property type required
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-2">
+                <select class="custom-select select-input bg-input" id="00N0T000008clZQ" name="00N5i000003HAD3" required>
+                    <option selected disabled value="">Product Type Required</option>
+                    
+                    <option value="All / Any 2 of the above">All / Any 2 of the above</option>
+                    <option value="Residential Door">Residential Door</option>
+                    <option value="Fire Door">Fire Door</option>
+                    <option value="Windows">Windows</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a product required
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-2">
+                <input  id="00N0T000009rQe1" name="00N5i0000079v7m" size="20" type="text" class="form-control bg-input onlyNumbers" placeholder="No. of Main Doors" required onpaste="validatePaste(this, event)"/>
+                <div class="invalid-feedback novalid1">
+                  Please enter a valid number
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-2">
+                <input  id="00N0T000009rQe6" name="00N5i0000079v7l" size="20" type="text" class="form-control bg-input onlyNumbers" placeholder="No. of Internal Doors" required onpaste="validatePaste(this, event)" />
+                <div class="invalid-feedback novalid2">
+                  Please enter a valid number
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-2">
+                <input  id="00N0T000009rQeB" name="00N5i0000079v7k" size="20" type="text" class="form-control bg-input onlyNumbers" placeholder="No. of Fire Doors" required onpaste="validatePaste(this, event)" />
+                <div class="invalid-feedback novalid3">
+                  Please enter a valid number
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-2">
+                <input  id="00N0T000009rQeG" name="00N5i0000079v7n" size="20" type="text" class="form-control bg-input onlyNumbers" placeholder="No. of Windows" required onpaste="validatePaste(this, event)"/>
+                <div class="invalid-feedback novalid4">
+                  Please enter a valid number
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-2">
+                <select class="custom-select select-input bg-input" name="00N5i000003HACx" id="00N0T000008clZB" required>
+                  <option selected disabled value="">Expected Buying Timeline</option>
+                  <option value="Immediate">Immediate</option>
+                  <option value="2 - 3 Months">2 - 3 Months</option>
+                  <option value="3 - 6 Months">3 - 6 Months</option>
+                  <option value="6 - 12 Months">6 - 12 Months</option>
+                  <option value="More than 1 Year">More than 1 Year</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a buying timeline
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-2">
+                <select class="custom-select select-input bg-input" id="00N0T000008clZL" name="00N5i000003HAD0" title="Per Sqft Selling Rate">
+                  <option selected disabled value="">Per Sqft Selling Rate</option>
+                  <option value="5000 - 7000">5000 - 7000</option>
+                  <option value="7000 - 9000">7000 - 9000</option>
+                  <option value="4000 - 5000">4000 - 5000</option>
+                  <option value="More than 9000">More than 9000</option>
+                  <option value="Less than 4000">Less than 4000</option>
+                </select>
+                <div class="invalid-feedback sqfterr">
+                  Please select a sqft selling rate
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-2 input-group date-container">
+                <div class="input-group-prepend lblwidth1" style="padding-left: 12px; justify-content: inherit;"> 
+                  <span class="date-label" id="basic-addon3">Date of Call</span>
+                </div>
+                  <input type="text" class="form-control date-input" name="00N5i000003HAD2" id="datepicker" required readonly 
+                  placeholder="DD/MM/YYYY" >
+                  <div class="invalid-feedback datevalidate">
+                    Please select a call date
+                  </div>
+              </div>
+              <div class="col-12 mb-2">
+                <textarea class="form-control bg-input textarea-input" name="00N0o00000N3MLt" id="comments" rows="6"
+                  placeholder="Comments" minlength="5" maxlength="250"></textarea>
+                <div class="invalid-feedback comments_empty">
+                  Please enter comment
+                </div>
+                <div class="error_msg" id="comments_min">Please enter minimum 5 Characters</div>
+              </div>
+              
+              <!--new-->
+              <div class="col-12 col-md-6 mb-2">
+                <select class="custom-select select-input bg-input" name="lead_source" id="lead_source" required>
+                  <option value="">Lead Source</option>
+                  <option value="Biltrax">Biltrax</option>
+                  <option value="Field Lead">Field Lead</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select lead source
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-2">
+                <select class="custom-select select-input bg-input" name="recordType" id="recordType" required>
+                  <option value="">Lead Record Type</option>
+                  <option value="0120o000000nsht">H&amp;C S&amp;S</option>
+                  
+                </select>
+                <div class="invalid-feedback">
+                  Please select lead record type
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-2">
+                <select class="custom-select select-input bg-input exeLoc" id="00N0T000009eXOc" name="00N5i000003HAUv" title="Executive Location" style="display:none;">
+                  <option value="">Executive Location</option>
+                  <option value="Ghaziabad">Ghaziabad</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Gurgaon">Gurgaon</option>
+                  <option value="Jaipur">Jaipur</option>
+                  <option value="Jodhpur">Jodhpur</option>
+                  <option value="Lucknow">Lucknow</option>
+                  <option value="Varanasi">Varanasi</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="Punjab &amp; HP">Punjab &amp; HP</option>
+                  <option value="South Bengal">South Bengal</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="North Bengal">North Bengal</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Coimbatore">Coimbatore</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Telengana">Telengana</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Pune">Pune</option>
+                </select>
+                <div class="invalid-feedback exeLocErr">
+                  Please select executive location
+                </div>
+              </div>
+
+
+            </div>
+            <button class="btn btn-submit" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>TATA Pravesh © 2022, All rights reserved.</p>
+    </footer>
+  </div>
+
+
+   <!-- Modal -->
+   <div class="modal fade" id="thankyoupopup" role="dialog" onClick="window.location.reload();" style="top:25%;">
+    <div class="modal-dialog">
+     <!-- Modal content-->
+     <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <h1 class="text-center" style="font-size: 20px;">Thank you<br>Your request has been submitted successfully</h1>
+        </div>
+        <div class="modal-footer">
+        </div>
+     </div>
+    </div>
+  </div>
+
+    <!-- updated-jquery -->
+  <!-- <script src="assets/vendors/js/jquery-3.6.0.min.js"></script> -->
+  <!-- <script src="assets/vendors/js/jquery-3.7.0.min.js"></script> -->
+
+  <script src="assets/vendors/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
